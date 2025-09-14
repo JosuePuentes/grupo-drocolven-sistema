@@ -15,7 +15,7 @@ from src.routes.reportes import reportes_bp
 from src.routes.orders import orders_bp
 
 app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'static'))
-app.config['SECRET_KEY'] = 'asdf#FGSgvasgf$5$WGT'
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'your_fallback_secret_key')
 
 # Enable CORS for all routes
 CORS(app)
