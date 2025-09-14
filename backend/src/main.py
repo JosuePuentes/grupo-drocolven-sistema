@@ -21,7 +21,7 @@ app.config['SECRET_KEY'] = 'asdf#FGSgvasgf$5$WGT'
 CORS(app)
 
 # Configure MongoDB
-app.config['MONGO_URI'] = 'mongodb+srv://drocolven_admin1:DrocolvenDB2024!@grupo-drocolven-cluster.zocfidd.mongodb.net/?retryWrites=true&w=majority&appName=grupo-drocolven-cluster'  # <-- IMPORTANT: REPLACE THIS
+app.config['MONGO_URI'] = os.getenv('MONGO_URI')  # <-- IMPORTANT: REPLACE THIS
 mongo.init_app(app)
 
 app.register_blueprint(user_bp, url_prefix='/api')
