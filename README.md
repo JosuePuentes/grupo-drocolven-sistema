@@ -199,3 +199,5 @@ Sistema propietario desarrollado específicamente para Grupo Drocolven.
 
 **© 2025 Grupo Drocolven - Sistema de Gestión de Farmacias**
 
+<!-- Cambio forzado para Vercel -->
+
