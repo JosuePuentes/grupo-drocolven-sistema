@@ -12,7 +12,9 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "dist"
-      }
+      },
+      "installCommand": "cd frontend && pnpm install",
+      "buildCommand": "cd frontend && pnpm build"
     }
   ],
   "routes": [
